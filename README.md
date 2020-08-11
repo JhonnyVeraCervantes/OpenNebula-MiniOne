@@ -46,51 +46,27 @@ Para ** evaluación de borde ** en un servidor físico dedicado o máquina virtu
 
 ## Quickstart
 
-Download the [latest release](https://github.com/OpenNebula/minione/releases/latest) of the **miniONE** tool, run it and follow the instructions on the terminal.
 
+Descargue la [última versión] (https://github.com/OpenNebula/minione/releases/latest) de la herramienta ** miniONE **, ejecútela y siga las instrucciones del terminal.
 ### Get KVM cloud
 
 Ejecute los comandos para implementar la nube de evaluación:
+En la carpeta "Downloads"
 
 ```
 wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione
 ```
+Si en un caso, al colocar el comando anterior le da error al correr.
+Ejecute este comando:
 
-### Get LXD cloud
-
-Ejecute los comandos para implementar la nube de evaluación:
-
-```
-wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
-sudo bash minione --lxd
-```
-### Get Firecracker cloud
-
-Ejecute los comandos para implementar la nube de evaluación:
-
-```
-wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
-sudo bash minione --firecracker
-```
-
-### Get Edge cloud on Packet
-
-miniONE instalará la interfaz de OpenNebula en el host donde ejecuta el comando y también implementará y configurará un host de hipervisor en Edge ([Packet] (https://www.packet.com/) en este caso) donde puede generar sus VM .
-
-Ejecute los comandos para implementar la nube de evaluación:
-
-```
-wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
-sudo bash minione --edge packet --edge-packet-token [packet-token] --edge-packet-project [packet-project]
-```
-
-Opcionalmente, puede usar elegir implementar en el hipervisor ** Firecracker ** en Edge.
-
-```
-wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
-sudo bash minione --firecracker --edge packet --edge-packet-token [packet-token] --edge-packet-project [packet-project]
-```
+...
+sudo apt install openssh-server
+...
+Y luego intenta denuevo
+...
+sudo bash minione
+...
 
 ## License
 
