@@ -60,13 +60,17 @@ sudo bash minione
 Si en un caso, al colocar el comando anterior le da error al correr.
 Ejecute este comando:
 
-...
+
+```
 sudo apt install openssh-server
-...
+```
+
 Y luego intenta denuevo
-...
+
+```
 sudo bash minione
-...
+```
+
 
 ## License
 
