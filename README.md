@@ -58,6 +58,7 @@ wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione
 ```
 Si en un caso, al colocar el comando anterior le da error al correr.
+Uno de los errores más comunes es que no está el paquete openssh-server instalado
 Ejecute este comando:
 
 
